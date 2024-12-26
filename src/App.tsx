@@ -8,6 +8,9 @@ import PricingPage from './pages/PricingPage';
 import AboutPage from './pages/AboutPage';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
+import ProfilePage from './pages/ProfilePage';
+import ClientPage from './pages/ClientPage';
+import LeaderboardPage from './pages/LeaderboardPage';
 
 function App() {
   return (
@@ -22,6 +25,9 @@ function App() {
             <Route path="/about" element={<AboutPage />} />
             <Route path="/login" element={<LoginPage />} />
             <Route path="/register" element={<RegisterPage />} />
+            <Route path="/profile" element={<ProfilePage />} />
+            <Route path="/client" element={<ClientPage />} />
+            <Route path="/leaderboard" element={<LeaderboardPage />} />
           </Routes>
         </main>
         <Footer />

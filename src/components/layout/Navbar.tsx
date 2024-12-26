@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Code2, Home, Users, DollarSign, LogIn, Terminal } from 'lucide-react';
+import { Code2, Home, Users, DollarSign, LogIn, Terminal, Trophy, User, Briefcase } from 'lucide-react';
 
 export default function Navbar() {
   return (
@@ -14,7 +14,7 @@ export default function Navbar() {
             </Link>
           </div>
           
-          <div className="flex items-center space-x-8">
+          <div className="flex items-center space-x-6">
             <Link to="/" className="text-gray-300 hover:text-white flex items-center space-x-1">
               <Home className="h-4 w-4" />
               <span>Home</span>
@@ -30,6 +30,18 @@ export default function Navbar() {
             <Link to="/about" className="text-gray-300 hover:text-white flex items-center space-x-1">
               <Users className="h-4 w-4" />
               <span>About</span>
+            </Link>
+            <Link to="/client" className="text-gray-300 hover:text-white flex items-center space-x-1">
+              <Briefcase className="h-4 w-4" />
+              <span>Client</span>
+            </Link>
+            <Link to="/leaderboard" className="text-gray-300 hover:text-white flex items-center space-x-1">
+              <Trophy className="h-4 w-4" />
+              <span>Leaderboard</span>
+            </Link>
+            <Link to="/profile" className="text-gray-300 hover:text-white flex items-center space-x-1">
+              <User className="h-4 w-4" />
+              <span>Profile</span>
             </Link>
             <Link to="/login" className="bg-purple-600 text-white px-4 py-2 rounded-md flex items-center space-x-1 hover:bg-purple-700">
               <LogIn className="h-4 w-4" />
